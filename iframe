@@ -1,0 +1,30 @@
+<html>
+<head>
+<title>Find Count of Numbers</title>
+<script>
+var positive=0;
+var negative=0;
+var zero=0;
+var x;
+var str="";
+for(var i=1;i<=10;i++)
+{
+x=prompt("Enter a number: ", "0");
+x=Number(x);
+str=str+x+"<br/>";
+if(x>0)
+positive++;
+else if(x<0)
+negative++;
+else
+zero++;
+} 
+document.write("Numbers Entered:<br/>"+str);
+document.write("<br/>Count of Positive Numbers: "+positive);
+document.write("<br/>Count of Negative Numbers: "+negative);
+document.write("<br/>Count of Zero: "+zero);
+</script>
+</head>
+<body>
+</body>
+</html>
